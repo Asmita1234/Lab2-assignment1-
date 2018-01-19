@@ -64,16 +64,16 @@ void SLL::insertAt(int pos, int data)
   temp2->next=NULL;
   node *traverse;
   traverse=head;
-  if(pos==size+1)//If to be inserted at the end
+  if(pos==size+1)//If to be inserted at the end.
   {
    insertEnd(data);
   }
-  else if(pos==1)//If to be inserted at the beginning
+  else if(pos==1)//If to be inserted at the beginning.
   {
    temp->next=head;
    head=temp;
   }
-  else if(pos>1 && pos<=size)//If to be inserted from second to the second last position
+  else if(pos>1 && pos<=size)//If to be inserted from second to the second last position.
   {
    for(int i=1;i<pos;i++)
    {
@@ -86,9 +86,9 @@ void SLL::insertAt(int pos, int data)
        traverse=traverse->next;
    }
   }
-  else//If pos exceeds size
+  else//If pos exceeds size.
   {
-   cout<<"\n \nSORRY ! ! ! Linked List does not have that many elements";
+   cout<<"\n \nSORRY !Linked List does not have that many elements";
   }
 }
 /*
@@ -118,14 +118,14 @@ int SLL::deleteAt(int pos)
 {
   node *traverse;
   traverse=head;
-  if(pos==1)//If first element to be deleted
+  if(pos==1)//If first element to be deleted.
   {
    head=traverse->next;
    traverse->next==NULL;
    return traverse->val;
    delete traverse;
   }
-  else if(pos>1 && pos<=size)//If  second to the last element to be deleted
+  else if(pos>1 && pos<=size)//If  second to the last element to be deleted.
   {
    for(int i=1;i<pos;i++)
    {
@@ -142,9 +142,9 @@ int SLL::deleteAt(int pos)
        traverse=traverse->next;
    }
   }
-  else//If pos exceeds size
+  else//If pos exceeds size.
   {
-   cout<<"\n \nSORRY ! ! ! Linked List does not have that many elements";
+   cout<<"\n \nSORRY !Linked List does not have that many elements";
    return 0;
   }
 /*
@@ -172,7 +172,7 @@ void display()
   }
  
  else
-  cout<<"\n \n \nThe Linked List is empty ! ! !";
+  cout<<"\n \n \nThe Linked List is empty !";
 }
 /*
  * */
